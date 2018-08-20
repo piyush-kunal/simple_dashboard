@@ -13,11 +13,11 @@ class Nav extends Component {
       <ul className="nav">
         <li className={location.pathname === '/' ? 'active' : null}>
           <Link to="/">
-            <i className="pe-7s-graph"></i>
+            <i className="pe-7s-box2"></i>
             <p>Dashboard</p>
           </Link>
         </li>
-        <li className={this.isPathActive('/components') || this.state.componentMenuOpen ? 'active' : null}>
+        {/* <li className={this.isPathActive('/components') || this.state.componentMenuOpen ? 'active' : null}>
           <a onClick={() => this.setState({ componentMenuOpen: !this.state.componentMenuOpen })}
             data-toggle="collapse">
             <i className="pe-7s-plugin"></i>
@@ -53,8 +53,8 @@ class Nav extends Component {
               </ul>
             </div>
           </Collapse>
-        </li>
-        <li className={this.isPathActive('/forms') || this.state.formMenuOpen ? 'active' : null}>
+        </li> */}
+        {/* <li className={this.isPathActive('/forms') || this.state.formMenuOpen ? 'active' : null}>
           <a onClick={() => this.setState({ formMenuOpen: !this.state.formMenuOpen })} data-toggle="collapse">
             <i className="pe-7s-note2"></i>
             <p>Forms <b className="caret"></b></p>
@@ -74,8 +74,8 @@ class Nav extends Component {
               </ul>
             </div>
           </Collapse>
-        </li>
-        <li className={this.isPathActive('/tables') || this.state.tableMenuOpen ? 'active' : null}>
+        </li> */}
+        {/* <li className={this.isPathActive('/tables') || this.state.tableMenuOpen ? 'active' : null}>
           <a onClick={() => this.setState({ tableMenuOpen: !this.state.tableMenuOpen })} data-toggle="collapse">
             <i className="pe-7s-news-paper"></i>
             <p>Tables <b className="caret"></b></p>
@@ -95,7 +95,7 @@ class Nav extends Component {
               </ul>
             </div>
           </Collapse>
-        </li>
+        </li> */}
         {/* <li className={this.isPathActive('/maps') || this.state.mapMenuOpen ? 'active' : null}>
           <a onClick={() => this.setState({ mapMenuOpen: !this.state.mapMenuOpen })} data-toggle="collapse">
             <i className="pe-7s-map-marker"></i>
@@ -114,9 +114,15 @@ class Nav extends Component {
             </div>
           </Collapse>
         </li> */}
+        <li className={this.isPathActive('/tables') ? 'active' : null}>
+          <Link to="/tables/regular-tables">
+            <i className="pe-7s-graph3"></i>
+            <p>Tabular Data</p>
+          </Link>
+        </li>
         <li className={this.isPathActive('/charts') ? 'active' : null}>
           <Link to="/charts">
-            <i className="pe-7s-graph"></i>
+            <i className="pe-7s-graph1"></i>
             <p>Charts</p>
           </Link>
         </li>

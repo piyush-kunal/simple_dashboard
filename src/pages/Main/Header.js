@@ -25,9 +25,10 @@ const Header = ({
           </FormGroup>
         </Navbar.Form>
         <Nav pullRight>
-          <NavDropdown title="Select Data Source" id="right-nav-bar">
-            <MenuItem>Data1</MenuItem>
-            <MenuItem>Data2</MenuItem>
+          <NavDropdown title="Data Source" id="right-nav-bar">
+            <MenuItem>SAS</MenuItem>
+            <MenuItem>Oracle</MenuItem>
+            <MenuItem>Big Data</MenuItem>
           </NavDropdown>
           <NavItem>Log out</NavItem>
         </Nav>

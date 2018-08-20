@@ -8,11 +8,11 @@ import ChartistGraph from 'react-chartist';
 // labels: ['62%','32%','6%'],
 // series: [62, 32, 6]
 // });
-const BigDataStatistic = () => {
+const SasStatChart = () => {
 
   let dataPreferences = {
-    labels: ['90', '10'],
-    series: [90, 10, 6]
+    labels: ['62%', '38%'],
+    series: [72, 28]
   };
 
   let optionsPreferences = {
@@ -36,8 +36,8 @@ const BigDataStatistic = () => {
 
     <div className="card">
       <div className="header">
-        <h4 className="title">Big Data Statistics</h4>
-        <p className="category">Big Data Performance</p>
+        <h4 className="title">SAS Statistics</h4>
+        <p className="category">Today Performance</p>
       </div>
       <div className="content">
 
@@ -64,4 +64,4 @@ const BigDataStatistic = () => {
   );
 };
 
-export default BigDataStatistic;
+export default SasStatChart;

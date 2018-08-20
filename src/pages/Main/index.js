@@ -45,7 +45,7 @@ const Main = ({
           <Route exact path="/" component={Dashboard} />
           <Route path="/components" component={Components} />
           <Route path="/profile" component={UserProfile} />
-          <Route path="/forms" component={Forms} />
+          {/* <Route path="/forms" component={Forms} /> */}
           <Route path="/tables" component={Tables} />
           {/* <Route path="/maps" component={MapsPage} /> */}
           <Route path="/charts" component={Charts} />
